@@ -1,7 +1,7 @@
 FROM gliderlabs/alpine:3.3
 MAINTAINER Thomas Lomas
 
-RUN apk add --no-cache py-pip py-setuptools ca-certificates py-magic gnupg
+RUN apk add --no-cache py-pip py-setuptools ca-certificates gnupg
 RUN pip install s3cmd
 RUN rm -rf /var/cache/apk/*
 
